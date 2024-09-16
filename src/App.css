@@ -1,0 +1,29 @@
+body{
+    background-color: #000000;
+    /* background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.for-shadow{
+    box-shadow: 0 -2px 55px rgba(56, 178, 172, 0.7);
+    transition: all 0.3s ease;
+    animation: shadowPulse 2s infinite alternate;
+}
+@keyframes shadowPulse {
+    0% {
+      box-shadow: 0 -2px 55px rgba(56, 178, 172, 0.7);
+      background-color: #38b2ac;
+    }
+    100% {
+      box-shadow: 0 -2px 100px rgba(43, 108, 176, 0.9);
+      background-color: #2b6cb0;
+    }
+  }
+  
+  /* Optional hover effect */
+  .shadow-animation:hover {
+    transform: scale(1.05);
+  }
+
