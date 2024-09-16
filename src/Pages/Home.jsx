@@ -118,7 +118,7 @@ const Home = () => {
 
     <div data-aos="fade-down"><p className=' md:text-[14px] text-[12px] font-slab text-[#ffffff]'>I'm Aayan, a skilled React developer<br/>  with extensive experience in building <br/> dynamic and responsive web applications.</p></div>
       <div data-aos="zoom-in">
-      <a class="cursor-pointer overflow-hidden relative z-100 flex justify-center items-center gap-3 bg-gradient-to-r from-[#43ffcd] to-[#239cf9] group py-2 px-5 md:px-14 md:py-3 mt-5 md:mt-10 md:ml-[115px] ml-0 rounded-full tracking-wide font-nav active:scale-90 duration-200" download="Aayan's CV" href="cv2.pdf">
+      <a class="cursor-pointer overflow-hidden relative z-100 flex justify-center items-center gap-3 bg-gradient-to-r from-[#43ffcd] to-[#239cf9] group py-2 px-5 md:px-14 md:py-3 mt-10 md:mt-10 md:ml-[115px] ml-0 rounded-full tracking-wide font-nav active:scale-90 duration-200" download="Aayan's CV" href="cv2.pdf">
         <FaFileArrowDown className='text-lg md:text-3xl text-white z-50' />
   <span class="relative z-10 text-white group-hover:text-white md:text-2xl text-lg duration-500">Download my CV</span>
   <span class="absolute w-full h-full bg-gray-900 -left-56 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
@@ -130,9 +130,9 @@ const Home = () => {
       <div className="absolute md:w-[300px] md:h-[380px] bg-[#282828] md:left-[720px] md:top-[23.5%] rounded-full "></div>
       <div className="absolute md:w-[300px] md:h-[380px] bg-[#60ffe5] md:left-[690px] md:top-[22.5%] rounded-full "></div>
       <div className="ml-[30px] md:mt-0 mt-[60px] md:ml-0">
-      <div className="absolute w-[300px] h-[380px] bg-[#ff8800] left-[90px] top-[53%] rounded-full scale-90 md:hidden "></div>
-      <div className="absolute w-[300px] h-[380px] bg-[#ff00f7] left-[10px] top-[53%] rounded-full scale-90  md:hidden "></div>
-      <div className="absolute w-[300px] h-[380px] bg-[#0400ff] left-[50px] top-[52%] rounded-full scale-90 md:hidden "></div>
+      <div className="absolute w-[300px] h-[380px] bg-[#292929] left-[90px] top-[53%] rounded-full scale-90 md:hidden "></div>
+      <div className="absolute w-[300px] h-[380px] bg-[#292929] left-[10px] top-[53%] rounded-full scale-90  md:hidden "></div>
+      <div className="absolute w-[300px] h-[380px] bg-[#60ffe5] left-[50px] top-[52%] rounded-full scale-90 md:hidden "></div>
     <div data-aos="fade-right"><img src="./photo.png" className='w-[300px] h-[410px] rounded-lg relative z-auto' alt="My Image" /></div>
       </div>
       </div>
