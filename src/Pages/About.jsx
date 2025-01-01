@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,6 +9,9 @@ import { BsFileEarmarkCode } from "react-icons/bs";
 import { PiBrowsersDuotone } from "react-icons/pi";
 import { IoPeople } from "react-icons/io5";
 
+import { TbFileCertificate } from "react-icons/tb";
+import { ImCross } from "react-icons/im";
+
 const About = () => {
   useEffect(() => {
     AOS.init({
@@ -16,17 +19,62 @@ const About = () => {
       once: true, // Whether animation should happen only once - while scrolling down
     });
   }, []);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
   return (
     <>
     <div className="container">
     <div className="flex justify-center items-center min-h-screen ">
     <div data-aos="fade-left">
-    <div className="w-[400px] md:h-[1200px] md:w-[1000px] bg-gradient-to-r from-[#484848] to-[#212121] rounded-3xl text-center gap-2 p-6 md:p-4 mt-[60px] mb-[60px]">
+    <div className="w-[400px] lg:h-[1200px] lg:w-[1000px] md:w-[900px] bg-gradient-to-r from-[#484848] to-[#212121] rounded-3xl text-center gap-2 p-6 md:p-4 mt-[60px] mb-[60px]">
         <div data-aos="fade-left"><h1 className='text-[48px] md:text-[60px] mt-2 font-headFont font-semibold bg-gradient-to-r to-sky-300 from-teal-800 bg-clip-text text-transparent'>Who am I?</h1></div>
       <div className="md:flex md:flex-row md:gap-9 flex-col justify-center items-center mt-5 md:mt-10">
       <div data-aos="fade-up"><img src="./pfp2.png" className='w-[220px] h-[300px] md:w-[280px] md:h-[400px] rounded-xl ml-[70px] mb-6 md:ml-0 md:mb-0 md:rounded-3xl' alt="My Image" /></div>
-      <div data-aos="zoom-in-up"><p className='md:w-[600px] md:text-[18px] font-merri font-semibold text-[#e0e0e0]'>Hey there! I'm <span className=' text-[#ffffff] font-extrabold font-slab text-[23px]'>Aayan,</span> a skilled and dedicated React developer with a strong foundation in modern web development technologies. With expertise in <span className=' text-[#FC490B] text-[23px]'>HTML5, </span> <span className=' text-[#13A1DF] text-[23px]'>CSS3, </span>  <span className=' text-[#F7E018] text-[23px]'>JavaScript, </span> <span className=' text-[#7330FA] text-[23px]'>Bootstrap, </span> <span className=' text-[#0769AD] text-[23px]'>JQuery, </span><span className=' text-[#764ABC] text-[23px]'>Redux, </span><span className=' text-[#17A7BC] text-[23px]'>Tailwind CSS, </span> and <span className=' text-[#42d6ff] text-[23px]'>React, </span> I am equipped to deliver high-quality, responsive, and user-friendly web applications.<br/><br/>With a strong foundation in these technologies, I have successfully delivered numerous projects, ensuring high performance, scalability, and excellent user experiences. I am passionate about clean code, modular architecture, and keeping up with the latest industry trends.</p></div>
+      <div className="flex flex-col justify-center items-center">
+      <div data-aos="zoom-in-up"><p className='md:w-[600px] md:text-[18px] font-merri font-semibold text-[#e0e0e0]'>
+        Hey there! I'm <span className=' text-[#ffffff] font-extrabold font-slab text-[23px]'>Aayan,</span> a skilled and dedicated React developer with a strong foundation in modern web development technologies. With expertise in <span className=' text-[#FC490B] text-[23px]'>HTML5, </span> <span className=' text-[#13A1DF] text-[23px]'>CSS3, </span>  <span className=' text-[#F7E018] text-[23px]'>JavaScript, </span> <span className=' text-[#7330FA] text-[23px]'>Bootstrap, </span> <span className=' text-[#0769AD] text-[23px]'>JQuery, </span><span className=' text-[#764ABC] text-[23px]'>Redux, </span><span className=' text-[#17A7BC] text-[23px]'>Tailwind CSS, </span> and <span className=' text-[#42d6ff] text-[23px]'>React, </span> I am equipped to deliver high-quality, responsive, and user-friendly web applications.<br/><br/>With a strong foundation in these technologies, I have successfully delivered numerous projects, ensuring high performance, scalability, and excellent user experiences. I am passionate about clean code, modular architecture, and keeping up with the latest industry trends.
+        </p></div>
+      {/* Trigger Button */}
+      <button
+        onClick={openModal}
+        className="flex justify-center items-center gap-3 text-white bg-gradient-to-r from-[#4353ff] to-[#239cf9] group py-2 px-5 mt-3 text-2xl rounded-full tracking-wide font-nav hover:scale-110 hover:animate-moving-shadow duration-200"
+        >
+          <TbFileCertificate/>
+        View my certificate
+      </button>
+
+      {/* Modal */}
+      {isOpen && (
+        <div
+        onClick={closeModal}
+        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div data-aos="fade-up">
+          <div className="bg-white lg:w-[800px] w-[300px] p-4 rounded-lg shadow-lg">
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="float-right text-white hover:bg-red-900 px-2 py-2 bg-red-600 transition-colors mb-3 rounded-full"
+              >
+              <ImCross/>
+            </button>
+
+            {/* PDF Viewer */}
+            <iframe
+              src="./certificate.pdf"
+              className="w-full h-[500px] border rounded"
+              title="PDF Viewer"
+              ></iframe>
+              </div>
+          </div>
+
+        </div>
+      )}
       </div>
+      </div>
+
       <div data-aos="fade-left"><h2 className='text-[24px] md:text-[30px] mt-7 font-subHed font-semibold text-[#0edbff]'>What I Offer</h2></div>
       <div data-aos="zoom-in">
       <div className="flex md:flex-row flex-col gap-4 justify-center items-center mt-7">

@@ -54,13 +54,124 @@ const Projects = () => {
     <div className="container">
     <div className="flex justify-center items-center min-h-screen ">
     <div data-aos="zoom-in-up">
-    <div className="w-[400px] md:h-[650px] md:w-[1200px] bg-gradient-to-r from-[#1f1f1f] to-[#454545] rounded-[85px] gap-2 p-8 md:mt-0 md:mb-0 mt-[60px] mb-[60px]">
+    <div className="w-[400px] lg:w-[1200px] md:w-[700px] bg-gradient-to-r from-[#1f1f1f] to-[#454545] rounded-[85px] gap-2 p-8 md:mt-0 md:mb-0 lg:mt-[60px] lg:mb-[60px]">
     <div data-aos="fade-up"><h1 className='text-[48px] md:text-[60px] text-center mt-2 font-headFont font-semibold bg-gradient-to-r to-sky-300 from-teal-800 bg-clip-text text-transparent'>My Projects</h1></div>
-    <div className="flex md:flex-row flex-col justify-center items-center gap-5 mt-6">
+    <div className="flex lg:flex-row flex-col justify-center items-center gap-5 mt-6">
+    <div onClick={openModal4} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
+    <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
+        <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./ct7.png" alt="Project Image" />
+    </div>
+        <div className="px-6 py-4">
+          <div className="font-bold text-3xl mb-3 text-center font-latoNav">ProChat</div>
+          <p className="text-gray-700 text-center text-[16px] font-medium font-montserrat">
+          A chat app with many features where a user can create an account and chat with friends along with much more.
+          </p>
+        </div>
+      </div>
+
+      {isModalOpen4 && (
+        
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="fixed md:mt-0 md:mb-0 mt-[60px] mb-[60px] inset-0 bg-black opacity-50 rounded-[85px]" onClick={closeModal4}></div>
+          <div data-aos="fade-up" data-aos-duration="900">
+            <div className="">
+          <div className=" bg-white rounded-xl shadow-lg md:w-[800px] mx-4 p-6 z-10">
+              <div className="flex justify-end items-center">
+              <button className=" text-gray-900 text-3xl hover:text-red-700 duration-100" onClick={closeModal4}>
+              <IoCloseCircle/>
+              </button>
+              </div>
+          <div className="font-bold text-4xl mb-6 text-center font-latoNav">Prochat</div>
+          <div className="flex flex-col justify-center items-start">
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js, Redux, Firebase and Tailwind</span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://pro-chat-one.vercel.app/'>https://pro-chat-one.vercel.app/</Link></span></h2>
+          </div>
+            <div className="mt-6">
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./ct1.png" alt="Project Details Image" />
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./ct2.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center mt-2 mb-2">
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./ct3.png" alt="Project Details Image" />
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./ct4.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./ct5.png" alt="Project Details Image" />
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./ct6.png" alt="Project Details Image" />
+              </div>
+              <p className="font-subHed mt-6 text-[17px]text-gray-700">
+              ProChat is a modern, feature-rich chat application built using React, Firebase, and Redux. It offers users the ability to create accounts, connect with friends through a seamless friend request system, and engage in real-time chats at any time. The application also includes advanced functionality for blocking and unblocking users, ensuring a safe and customizable experience.
+              </p>
+            </div>
+          </div>
+            </div>
+
+          </div>
+        </div>
+        
+      )}
+    <div onClick={openModal5} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
+    <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
+        <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./lpc7.png" alt="Project Image" />
+    </div>
+        <div className="px-6 py-4">
+          <div className="font-bold text-3xl mb-3 text-center font-latoNav">Lapcon</div>
+          <p className="text-gray-700 text-center text-[16px] font-medium font-montserrat">
+          An online e-commerce store to browse and buy laptops easily with the option to add or remove items from your shopping cart.
+          </p>
+        </div>
+      </div>
+
+      {isModalOpen5 && (
+        
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="fixed md:mt-0 md:mb-0 mt-[60px] mb-[60px] inset-0 bg-black opacity-50 rounded-[85px]" onClick={closeModal5}></div>
+          <div data-aos="fade-up" data-aos-duration="900">
+            <div className="">
+          <div className=" bg-white rounded-xl shadow-lg md:w-[800px] mx-4 p-6 z-10">
+              <div className="flex justify-end items-center">
+              <button className=" text-gray-900 text-3xl hover:text-red-700 duration-100" onClick={closeModal5}>
+              <IoCloseCircle/>
+              </button>
+              </div>
+          <div className="font-bold text-4xl mb-6 text-center font-latoNav">Lapcon</div>
+          <div className="flex flex-col justify-center items-start">
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js, Redux, Firebase and Tailwind</span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://task-opal-theta.vercel.app/'>https://task-opal-theta.vercel.app/</Link></span></h2>
+          </div>
+            <div className="mt-6">
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./lpc1.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./lpc2.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center mt-2 mb-2">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./lpc3.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./lpc4.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./lpc5.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./lpc6.png" alt="Project Details Image" />
+              </div>
+              <p className="font-subHed mt-6 text-[17px]text-gray-700">
+              Lapcon is a e-commerce platform tailored for laptop shopping, built using React, Firebase, and Redux. 
+              This application provides a simple and intuitive user experience where customers can browse laptops,
+               add items to their cart, and manage their selections by adding or removing products as needed
+               without any log in or register feature.
+              </p>
+            </div>
+          </div>
+            </div>
+
+          </div>
+        </div>
+        
+      )}
+    </div>
+    <div className="flex lg:flex-row flex-col justify-center items-center gap-5 mt-6">
       
     <div onClick={openModal} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
     <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
-        <img className="w-full h-[11rem] object-cover transform transition-transform duration-500 group-hover:scale-110" src="./pro1.png" alt="Project Image" />
+        <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./pro1.png" alt="Project Image" />
     </div>
         <div className="px-6 py-4">
           <div className="font-bold text-3xl mb-3 text-center font-latoNav">Multiplier Game</div>
@@ -89,8 +200,8 @@ const Projects = () => {
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
-              <img className="md:w-[370px] md:h-[230px] object-cover rounded" src="./pro2.png" alt="Project Details Image" />
-              <img className="md:w-[370px] md:h-[230px] object-cover rounded" src="./pro3.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[230px]   rounded" src="./pro2.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[230px]   rounded" src="./pro3.png" alt="Project Details Image" />
               </div>
               <p className="font-subHed mt-6 text-[17px]text-gray-700">
                 Welcome to Multiplier game! In this web application, put your desired number in the input and the hit on multiply button. Then in the orange box, you will get the times-table upto 10 of the number that you entered. To enter a new number, first reload the page and then enter your number again.
@@ -105,7 +216,7 @@ const Projects = () => {
       )}
           <div onClick={openModal2} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
     <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
-        <img className="w-full h-[11rem] object-cover transform transition-transform duration-500 group-hover:scale-110" src="./pro13.png" alt="Project Image" />
+        <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./pro13.png" alt="Project Image" />
     </div>
         <div className="px-6 py-4">
           <div className="font-bold text-3xl mb-3 text-center font-latoNav">Number Guessing Game</div>
@@ -134,12 +245,12 @@ const Projects = () => {
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center mb-4">
-              <img className="md:w-[370px] md:h-[180px] object-cover rounded" src="./pro11.png" alt="Project Details Image" />
-              <img className="md:w-[370px] md:h-[180px] object-cover rounded" src="./pro12.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px]   rounded" src="./pro11.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px]   rounded" src="./pro12.png" alt="Project Details Image" />
               </div>
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
-              <img className="md:w-[370px] md:h-[180px] object-cover rounded" src="./pro13.png" alt="Project Details Image" />
-              <img className="md:w-[370px] md:h-[180px] object-cover rounded" src="./pro15.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px]   rounded" src="./pro13.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px]   rounded" src="./pro15.png" alt="Project Details Image" />
               </div>
               <p className="font-subHed mt-6 text-[15px] text-gray-700">
 
@@ -157,7 +268,7 @@ const Projects = () => {
 
           <div onClick={openModal3} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
     <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
-        <img className="w-full h-[11rem] object-cover transform transition-transform duration-500 group-hover:scale-110" src="./todo2.png" alt="Project Image" />
+        <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./todo2.png" alt="Project Image" />
     </div>
         <div className="px-6 py-4">
           <div className="font-bold text-3xl mb-3 text-center font-latoNav">Todo List</div>
@@ -186,11 +297,11 @@ const Projects = () => {
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center mb-4">
-              <img className="md:w-[370px] md:h-[180px] object-cover rounded" src="./todo1.png" alt="Project Details Image" />
-              <img className="md:w-[370px] md:h-[180px] object-cover rounded" src="./todo2.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px]   rounded" src="./todo1.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px]   rounded" src="./todo2.png" alt="Project Details Image" />
               </div>
               <div className="flex justify-center gap-4 items-center">
-              <img className="md:w-[370px] md:h-[180px] object-cover rounded" src="./todo3.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px]   rounded" src="./todo3.png" alt="Project Details Image" />
               </div>
               <p className="font-subHed mt-6 text-[15px] text-gray-700">
               This is a Todo List application built with HTML, CSS, and JavaScript. This application empowers users to efficiently manage their tasks by allowing them to add new items, remove unwanted ones, and mark tasks as complete with a single click. It's an easy-to-use tool designed to enhance productivity and keep track of daily to-dos.
@@ -208,12 +319,6 @@ const Projects = () => {
 
 
 
-    <div className="flex justify-center items-center gap-5 mt-8">
-
-
-
-
-    </div>
   </div>
     </div>
       </div>
