@@ -61,9 +61,9 @@ const Home = () => {
     <div>
   {/* Default text for small and large devices (with <br> tags) */}
   <p className="lg:text-[14px]  font-slab text-[#ffffff] hidden lg:block">
-    I'm Aayan, a skilled React developer<br /> 
-    with extensive experience in building<br />
-    dynamic and responsive web applications.
+    I'm Aayan, a skilled Frontend React developer<br /> 
+    with extensive experience in building dynamic<br />
+     and responsive web applications.
   </p>
 
   {/* Text for medium devices (without <br> tags) */}

@@ -43,6 +43,33 @@ const Projects = () => {
 
   const openModal6 = () => setIsModalOpen6(true);
   const closeModal6 = () => setIsModalOpen6(false);
+  
+  const [isModalOpen7, setIsModalOpen7] = useState(false);
+
+  const openModal7 = () => setIsModalOpen7(true);
+  const closeModal7 = () => setIsModalOpen7(false);
+  
+  const [isModalOpen8, setIsModalOpen8] = useState(false);
+
+  const openModal8 = () => setIsModalOpen8(true);
+  const closeModal8 = () => setIsModalOpen8(false);
+  
+  const [isModalOpen9, setIsModalOpen9] = useState(false);
+
+  const openModal9 = () => setIsModalOpen9(true);
+  const closeModal9 = () => setIsModalOpen9(false);
+  
+  const [isModalOpen10, setIsModalOpen10] = useState(false);
+
+  const openModal10 = () => setIsModalOpen10(true);
+  const closeModal10 = () => setIsModalOpen10(false);
+  
+  const [isModalOpen11, setIsModalOpen11] = useState(false);
+
+  const openModal11 = () => setIsModalOpen11(true);
+  const closeModal11 = () => setIsModalOpen11(false);
+
+
   useEffect(() => {
     AOS.init({
       duration: 1200, // Animation duration in milliseconds
@@ -56,7 +83,7 @@ const Projects = () => {
     <div data-aos="zoom-in-up">
     <div className="w-[400px] lg:w-[1200px] md:w-[700px] bg-gradient-to-r from-[#1f1f1f] to-[#454545] rounded-[85px] gap-2 p-8 md:mt-0 md:mb-0 lg:mt-[60px] lg:mb-[60px]">
     <div data-aos="fade-up"><h1 className='text-[48px] md:text-[60px] text-center mt-2 font-headFont font-semibold bg-gradient-to-r to-sky-300 from-teal-800 bg-clip-text text-transparent'>My Projects</h1></div>
-    <div className="flex lg:flex-row flex-col justify-center items-center gap-5 mt-6">
+    <div className="flex lg:flex-row flex-col justify-center items-center gap-5 mt-6">    
     <div onClick={openModal4} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
     <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
         <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./ct7.png" alt="Project Image" />
@@ -75,7 +102,7 @@ const Projects = () => {
           <div className="fixed md:mt-0 md:mb-0 mt-[60px] mb-[60px] inset-0 bg-black opacity-50 rounded-[85px]" onClick={closeModal4}></div>
           <div data-aos="fade-up" data-aos-duration="900">
             <div className="">
-          <div className=" bg-white rounded-xl shadow-lg md:w-[800px] mx-4 p-6 z-10">
+          <div className=" bg-gray-200 rounded-xl shadow-lg md:w-[800px] mx-4 p-6 z-10">
               <div className="flex justify-end items-center">
               <button className=" text-gray-900 text-3xl hover:text-red-700 duration-100" onClick={closeModal4}>
               <IoCloseCircle/>
@@ -166,7 +193,239 @@ const Projects = () => {
         </div>
         
       )}
+    <div onClick={openModal6} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
+    <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
+        <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./al5.png" alt="Project Image" />
     </div>
+        <div className="px-6 py-4">
+          <div className="font-bold text-3xl mb-3 text-center font-latoNav">Auto Land</div>
+          <p className="text-gray-700 text-center text-[16px] font-medium font-montserrat">
+          A useful product filtering out process used in e-commerce stores made with a good example of cars.
+          </p>
+        </div>
+      </div>
+
+      {isModalOpen6 && (
+        
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="fixed md:mt-0 md:mb-0 mt-[60px] mb-[60px] inset-0 bg-black opacity-50 rounded-[85px]" onClick={closeModal6}></div>
+          <div data-aos="fade-up" data-aos-duration="900">
+            <div className="">
+          <div className=" bg-white rounded-xl shadow-lg md:w-[800px] mx-4 p-6 z-10">
+              <div className="flex justify-end items-center">
+              <button className=" text-gray-900 text-3xl hover:text-red-700 duration-100" onClick={closeModal6}>
+              <IoCloseCircle/>
+              </button>
+              </div>
+          <div className="font-bold text-4xl mb-6 text-center font-latoNav">Auto Land</div>
+          <div className="flex flex-col justify-center items-start">
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js and Tailwind</span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://filtered-api-one.vercel.app/'>https://filtered-api-one.vercel.app/</Link></span></h2>
+          </div>
+            <div className="mt-6">
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./al1.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./al2.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center mt-2 mb-2">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./al3.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./al4.png" alt="Project Details Image" />
+              </div>
+              <p className="font-subHed mt-6 text-[17px]text-gray-700">
+              Auto Land is a site where product filtering out process
+              which is widely used in e-commerce sites nowadays for better user experience 
+              has been made and three different categories of cars are
+              used over here to make people the process understand easily. 
+              </p>
+            </div>
+          </div>
+            </div>
+
+          </div>
+        </div>
+        
+      )}
+    </div>
+
+     
+
+    <div className="flex lg:flex-row flex-col justify-center items-center gap-5 mt-6">
+    <div onClick={openModal7} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
+    <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
+        <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./np13.png" alt="Project Image" />
+    </div>
+        <div className="px-6 py-4">
+          <div className="font-bold text-3xl mb-3 text-center font-latoNav">NewsPro</div>
+          <p className="text-gray-700 text-center text-[16px] font-medium font-montserrat">
+            A static news website that covers national, and international news, as well as opinion pieces and investigative reports.
+          </p>
+        </div>
+      </div>
+
+      {isModalOpen7 && (
+        
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="fixed md:mt-0 md:mb-0 mt-[60px] mb-[60px] inset-0 bg-black opacity-50 rounded-[85px]" onClick={closeModal7}></div>
+          <div data-aos="fade-up" data-aos-duration="900">
+            <div className="">
+          <div className=" bg-slate-200 rounded-xl shadow-lg md:w-[800px] mx-4 p-6 z-10">
+              <div className="flex justify-end items-center">
+              <button className=" text-gray-900 text-3xl hover:text-red-700 duration-100" onClick={closeModal7}>
+              <IoCloseCircle/>
+              </button>
+              </div>
+          <div className="font-bold text-4xl mb-6 text-center font-latoNav">NewsPro</div>
+          <div className="flex flex-col justify-center items-start">
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js and Tailwind</span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://news-pro-ten.vercel.app/'>https://news-pro-ten.vercel.app/</Link></span></h2>
+          </div>
+            <div className="mt-6">
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np1.png" alt="Project Details Image" />
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np2.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center mt-2 mb-2">
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np3.png" alt="Project Details Image" />
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np4.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np5.png" alt="Project Details Image" />
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np6.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center mt-2 mb-2">
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np7.png" alt="Project Details Image" />
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np8.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np9.png" alt="Project Details Image" />
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np10.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center mt-2">
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np11.png" alt="Project Details Image" />
+              <img className="md:w-[350px] md:h-[170px] rounded" src="./np12.png" alt="Project Details Image" />
+              </div>
+              <p className="font-subHed mt-6 text-[17px]text-gray-700">
+              NewsPro is a non-dynamic, static dekstop news website which is beautifully designed with Tailwind CSS without any responsive effect for any other devices.
+              </p>
+            </div>
+          </div>
+            </div>
+
+          </div>
+        </div>
+        
+      )}
+    <div onClick={openModal8} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
+    <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
+        <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./sf1.png" alt="Project Image" />
+    </div>
+        <div className="px-6 py-4">
+          <div className="font-bold text-3xl mb-3 text-center font-latoNav">Stylla Fashion</div>
+          <p className="text-gray-700 text-center text-[16px] font-medium font-montserrat">
+          Stylla Fashion's official website with a bold look and design, along wih various features and information.
+          </p>
+        </div>
+      </div>
+
+      {isModalOpen8 && (
+        
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="fixed md:mt-0 md:mb-0 mt-[60px] mb-[60px] inset-0 bg-black opacity-50 rounded-[85px]" onClick={closeModal8}></div>
+          <div data-aos="fade-up" data-aos-duration="900">
+            <div className="">
+          <div className=" bg-white rounded-xl shadow-lg md:w-[800px] mx-4 p-6 z-10">
+              <div className="flex justify-end items-center">
+              <button className=" text-gray-900 text-3xl hover:text-red-700 duration-100" onClick={closeModal8}>
+              <IoCloseCircle/>
+              </button>
+              </div>
+          <div className="font-bold text-4xl mb-6 text-center font-latoNav">Stylla Fashion</div>
+          <div className="flex flex-col justify-center items-start">
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js and Tailwind</span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://stylla-fashion.vercel.app/'>https://stylla-fashion.vercel.app/</Link></span></h2>
+          </div>
+            <div className="mt-6">
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./sf1.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./sf2.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center mt-2 mb-2">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./sf3.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./sf4.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./sf5.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./sf6.png" alt="Project Details Image" />
+              </div>
+              <p className="font-subHed mt-6 text-[17px]text-gray-700">
+              This is Stylla Fashion's official website designed with a tone of blue and other contrasts and with beautiful responsive effect.
+              </p>
+            </div>
+          </div>
+            </div>
+
+          </div>
+        </div>
+        
+      )}
+    <div onClick={openModal9} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
+    <div class="relative overflow-hidden w-full h-[11rem] rounded-lg">
+        <img className="w-full h-[11rem]   transform transition-transform duration-500 group-hover:scale-110" src="./cr3.png" alt="Project Image" />
+    </div>
+        <div className="px-6 py-4">
+          <div className="font-bold text-3xl mb-3 text-center font-latoNav">Cartix</div>
+          <p className="text-gray-700 text-center text-[16px] font-medium font-montserrat">
+          A master layout used over here that ensures consistent design and structure across multiple pages.
+          </p>
+        </div>
+      </div>
+
+      {isModalOpen9 && (
+        
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="fixed md:mt-0 md:mb-0 mt-[60px] mb-[60px] inset-0 bg-black opacity-50 rounded-[85px]" onClick={closeModal9}></div>
+          <div data-aos="fade-up" data-aos-duration="900">
+            <div className="">
+          <div className=" bg-white rounded-xl shadow-lg md:w-[800px] mx-4 p-6 z-10">
+              <div className="flex justify-end items-center">
+              <button className=" text-gray-900 text-3xl hover:text-red-700 duration-100" onClick={closeModal9}>
+              <IoCloseCircle/>
+              </button>
+              </div>
+          <div className="font-bold text-4xl mb-6 text-center font-latoNav">Cartix</div>
+          <div className="flex flex-col justify-center items-start">
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js and Tailwind</span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://cartix-beta.vercel.app/'>https://cartix-beta.vercel.app/</Link></span></h2>
+          </div>
+            <div className="mt-6">
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./cr1.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./cr2.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center mt-2 mb-2">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./cr3.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./cr4.png" alt="Project Details Image" />
+              </div>
+              <div className="flex md:flex-row flex-col justify-center gap-4 items-center mt-2 mb-2">
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./cr5.png" alt="Project Details Image" />
+              <img className="md:w-[370px] md:h-[180px] rounded" src="./cr6.png" alt="Project Details Image" />
+              </div>
+              <p className="font-subHed mt-6 text-[17px]text-gray-700">
+              In Cartix, the master layout has been used. When you click on the about page, 
+              it navigates you to a new structured page and a new menubar is seen with pages related 
+              to about, which ensures consistency.
+              </p>
+            </div>
+          </div>
+            </div>
+
+          </div>
+        </div>
+        
+      )}
+    </div>
+
+
     <div className="flex lg:flex-row flex-col justify-center items-center gap-5 mt-6">
       
     <div onClick={openModal} className="w-[320px] h-[410px] rounded-xl overflow-hidden shadow-lg p-3 bg-white transform group transition-transform duration-300 cursor-pointer">
