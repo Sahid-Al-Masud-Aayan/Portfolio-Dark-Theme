@@ -28,7 +28,9 @@ const Skills = () => {
     <div data-aos="fade-down">
     <div className="w-[400px] lg:h-[1800px] md:w-[800px] lg:w-[1000px] bg-gradient-to-r from-[#383838] to-[#242424] rounded-3xl flex flex-col items-center gap-2 p-4 mt-[60px] mb-[60px]">
     <div data-aos="fade-left"><h1 className='text-[48px] md:text-[60px] mt-2 font-headFont font-semibold bg-gradient-to-r to-sky-300 from-teal-800 bg-clip-text text-transparent'>My Skills</h1></div>
-    <h3 className='text-[21px] md:text-[28px] font-nav mb-4 text-center text-[#ffffff]'>As a React developer, I excel in building dynamic and responsive web applications using a robust tech stack that includes React, HTML5, CSS3, and Tailwind CSS. My expertise extends to creating seamless user interfaces with advanced JavaScript techniques and state management tools like Redux. Additionally, I leverage Figma for crafting detailed UI/UX designs and use Canva to produce high-quality graphics. My focus is on delivering pixel-perfect, performant solutions that enhance user experience and meet modern web standards.</h3>
+    <h3 className='text-[21px] md:text-[28px] font-nav mb-4 text-center text-[#ffffff]'>
+    As a React developer, I specialize in building dynamic, scalable, and responsive web applications using a modern tech stack, including React, Redux, and Firebase. My expertise lies in creating seamless user interfaces, implementing efficient state management, and integrating real-time database functionality with Firebase. With a deep understanding of HTML5, CSS3, and Tailwind CSS, I ensure pixel-perfect and performant solutions. Additionally, I utilize Figma for crafting intuitive UI/UX designs and Canva for producing high-quality graphics. My goal is to deliver modern web applications that prioritize performance, usability, and scalability.
+    </h3>
     <div data-aos="fade-up">
     <div className="flex md:flex-row flex-col justify-center items-center gap-3 md:gap-5">
 

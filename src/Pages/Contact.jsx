@@ -6,6 +6,8 @@ import { FaFacebook, FaGithub, FaLinkedin, FaPhone } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { Bounce, Slide, ToastContainer, Zoom, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { db } from '../firebase';
+import { getDatabase, ref, set, push } from "firebase/database";
 
 const Contact = () => {
 
@@ -35,6 +37,8 @@ const Contact = () => {
     SetMessageError('')
   }
 
+
+
   const finalSubmit = (e)=>{
     e.preventDefault()
     if(!name){
@@ -46,6 +50,12 @@ const Contact = () => {
     }if(!Message){
       SetMessageError('Please enter your description.')
     }else{
+      set(push(ref(db, 'information/')), {
+        Name: name,
+        Email: email,
+        Subject: Subject,
+        Message: Message,
+      });
       toast.success ('Message sent.', {
         position: "top-right",
         autoClose: 5000,
@@ -152,18 +162,18 @@ const Contact = () => {
     <div className="px-12 mt-10 flex lg:flex-row flex-col justify-between items-center">
     <div className="flex flex-col justify-center items-start">
     <p className='text-2xl text-gray-300 font-nav tracking-wide'>NAME</p>
-    <input onChange={NameHandler} className='w-[350px] md:w-[400px] h-[35px] text-white outline-none bg-transparent border-b-[3px] border-white placeholder:text-gray-300 placeholder:text-2xl' type="text" />
+    <input onChange={NameHandler} className='w-[350px] md:w-[400px] h-[35px] text-white outline-none bg-transparent border-b-[3px] border-white placeholder:text-gray-300 placeholder:text-2xl font-merri' type="text" />
     <p className='text-[14px] text-red-600 font-subHed font-bold m-0 p-0'>{nameError}</p>
     <p className='text-2xl text-gray-300 font-nav tracking-wide mt-6'>SUBJECT</p>
-    <input onChange={SubjectHandler} className='w-[350px] md:w-[400px] h-[35px] text-white outline-none bg-transparent border-b-[3px] border-white placeholder:text-gray-300 placeholder:text-2xl' type="text" />
+    <input onChange={SubjectHandler} className='w-[350px] md:w-[400px] h-[35px] text-white outline-none bg-transparent border-b-[3px] border-white placeholder:text-gray-300 placeholder:text-2xl font-merri' type="text" />
     <p className='text-[14px] text-red-600 font-subHed font-bold m-0 p-0'>{SubjectError}</p>
     <p className='text-2xl text-gray-300 font-nav tracking-wide mt-6'>EMAIL</p>
-    <input onChange={EmailHandler} className='w-[350px] md:w-[400px] h-[35px] text-white outline-none bg-transparent border-b-[3px] border-white placeholder:text-gray-300 placeholder:text-2xl' type="email" />
+    <input onChange={EmailHandler} className='w-[350px] md:w-[400px] h-[35px] text-white outline-none bg-transparent border-b-[3px] border-white placeholder:text-gray-300 placeholder:text-2xl font-merri' type="email" />
     <p className='text-[14px] text-red-600 font-subHed font-bold m-0 p-0'>{emailError}</p>
     </div>
     <div className="">
     <p className='text-2xl text-gray-300 font-nav mb-3 tracking-wide mt-8 md:mt-0'>MESSAGE</p>
-    <textarea onChange={MessageHandler} className='w-[350px] md:w-[400px] h-[205px] text-white outline-none rounded-lg bg-transparent border-[2px] border-white placeholder:text-gray-300 p-2 placeholder:text-2xl' type="text" />
+    <textarea onChange={MessageHandler} className='w-[350px] md:w-[400px] h-[205px] text-white outline-none rounded-lg bg-transparent border-[2px] border-white placeholder:text-gray-300 p-2 placeholder:text-2xl font-merri' type="text" />
     <p className='text-[14px] text-red-600 font-subHed font-bold m-0 p-0'>{MessageError}</p>
      </div>
     </div>
