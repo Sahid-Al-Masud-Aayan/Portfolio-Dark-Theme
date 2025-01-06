@@ -156,7 +156,7 @@ const Contact = () => {
       </div>
 </div>
 
-<div data-aos="fade-left"><h2 className="mt-16 text-[32px] md:text-[38px] font-subHed text-center font-semibold text-[#ffffff]">Get in touch</h2></div>
+<div data-aos="fade-left"><h2 className="mt-16 lg:text-[43px] md:text-[38px] text-[32px] font-oswaldHd tracking-wider text-center font-semibold text-[#ffffff]">Let's build something together</h2></div>
 <div data-aos="zoom-in-down">
   <form className='' onSubmit={finalSubmit}>
     <div className="px-12 mt-10 flex lg:flex-row flex-col justify-between items-center">
