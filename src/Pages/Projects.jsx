@@ -111,7 +111,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">Prochat</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js, Redux, Firebase and Tailwind</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://pro-chat-one.vercel.app/'>https://pro-chat-one.vercel.app/</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://pro-chat-one.vercel.app/'>pro-chat-one.vercel.app</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
@@ -164,7 +164,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">Lapcon</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js, Redux, Firebase and Tailwind</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://task-opal-theta.vercel.app/'>https://task-opal-theta.vercel.app/</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://lapcon.vercel.app'>lapcon.vercel.app</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
@@ -220,7 +220,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">Auto Land</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js and Tailwind</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://filtered-api-one.vercel.app/'>https://filtered-api-one.vercel.app/</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://filtered-api-one.vercel.app/'>filtered-api-one.vercel.app</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
@@ -277,7 +277,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">NewsPro</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js and Tailwind</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://news-pro-ten.vercel.app/'>https://news-pro-ten.vercel.app/</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://news-pro-ten.vercel.app/'>news-pro-ten.vercel.app</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
@@ -342,7 +342,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">Stylla Fashion</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js and Tailwind</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://stylla-fashion.vercel.app/'>https://stylla-fashion.vercel.app/</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://stylla-fashion.vercel.app/'>stylla-fashion.vercel.app</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
@@ -395,7 +395,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">Cartix</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js and Tailwind</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://cartix-beta.vercel.app/'>https://cartix-beta.vercel.app/</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://cartix-beta.vercel.app/'>cartix-beta.vercel.app</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
@@ -455,7 +455,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">Multiplier Game</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>HTML, CSS and JavaScript</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[15px]'> <Link target='blank' to='https://sahid-al-masud-aayan.github.io/Multiplier/'>https://sahid-al-masud-aayan.github.io/Multiplier/</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[15px]'> <Link target='blank' to='https://sahid-al-masud-aayan.github.io/Multiplier/'>sahid-al-masud-aayan.github.io/Multiplier</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
@@ -500,7 +500,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">Number Guessing Game</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>HTML, CSS and JavaScript</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[15px]'> <Link target='blank' to='https://sahid-al-masud-aayan.github.io/Dark-themed-Number-Guessing-game/'>https://sahid-al-masud-aayan.github.io/Dark-themed-Number-Guessing-game/</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[15px]'> <Link target='blank' to='https://sahid-al-masud-aayan.github.io/Dark-themed-Number-Guessing-game/'>sahid-al-masud-aayan.github.io/Dark-themed-Number-Guessing-game</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center mb-4">
@@ -552,7 +552,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">Todo List</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>HTML, CSS and JavaScript</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[18px]'> <Link target='blank' to='https://sahid-al-masud-aayan.github.io/To-do-task/'>https://sahid-al-masud-aayan.github.io/To-do-task/</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[18px]'> <Link target='blank' to='https://sahid-al-masud-aayan.github.io/To-do-task/'>sahid-al-masud-aayan.github.io/To-do-task</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center mb-4">
