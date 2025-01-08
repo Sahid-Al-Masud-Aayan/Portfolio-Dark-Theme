@@ -220,7 +220,7 @@ const Projects = () => {
           <div className="font-bold text-4xl mb-6 text-center font-latoNav">Auto Land</div>
           <div className="flex flex-col justify-center items-start">
           <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] mb-1'><DiCodeBadge className='text-3xl'/> Language: <span className=' tracking-wide font-bold'>React Js and Tailwind</span></h2>
-          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://filtered-api-one.vercel.app/'>filtered-api-one.vercel.app</Link></span></h2>
+          <h2 className='flex justify-start items-center gap-2 font-slab tracking-widest text-[21px] ml-1'><FaExternalLinkAlt className='text-2xl'/> Preview: <span className=' tracking-wide font-bold hover:underline text-[21px]'> <Link target='blank' to='https://autoland.vercel.app/'>autoland.vercel.app</Link></span></h2>
           </div>
             <div className="mt-6">
               <div className="flex md:flex-row flex-col justify-center gap-4 items-center">
