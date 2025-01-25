@@ -109,7 +109,7 @@ const Home = () => {
   {/* Shared Image */}
   <div data-aos="fade-right">
     <img
-      src="./photo.png"
+      src="./home.png"
       className="w-[300px] h-[410px] rounded-lg relative z-auto lg:mt-0 lg:ml-0 mt-[58px] ml-[27px] md:ml-[200px] md:mt-[50px]"
       alt="My Image"
     />

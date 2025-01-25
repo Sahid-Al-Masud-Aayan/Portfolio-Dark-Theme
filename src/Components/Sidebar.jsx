@@ -32,8 +32,8 @@ const Sidebar = () => {
             <div className="flex flex-col gap-3">
               <div className="flex flex-col justify-center items-center">
                 <img
-                  className="h-[160px] w-[160px] mt-4 rounded-full"
-                  src="./prf1.jpg"
+                  className="h-[200px] w-[180px] mt-2 rounded-full"
+                  src="./prf2.png"
                   alt="Logo"
                 />
                 <h3 className="text-[#ffffff] font-semibold text-[21px] md:text-[26px] text-center font-oswaldHd">
@@ -132,7 +132,7 @@ const Sidebar = () => {
               <div className="flex flex-col justify-center items-center">
                 <img
                   className="h-[160px] w-[160px] mt-4 rounded-full"
-                  src="./prf1.jpg"
+                  src="./prf2.png"
                   alt="Logo"
                 />
                 <h3 className="text-[#ffffff] font-semibold text-[21px] md:text-[26px] text-center font-oswaldHd">
