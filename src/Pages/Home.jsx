@@ -79,8 +79,8 @@ const Home = () => {
        href="Aayan's Resume.pdf">
         <FaFileArrowDown className='text-lg lg:text-3xl text-white z-50' />
   <span class="relative z-10 text-white group-hover:text-white lg:text-2xl md:text-2xl text-xl duration-500">Download my CV</span>
-  <span class="absolute w-full h-full bg-gray-900 -left-56 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-  <span class="absolute w-full h-full bg-gray-900 -right-56 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+  <span class="absolute w-full h-full bg-blue-900 -left-56 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+  <span class="absolute w-full h-full bg-blue-900 -right-56 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
 </a>
         </div>
       </div>
