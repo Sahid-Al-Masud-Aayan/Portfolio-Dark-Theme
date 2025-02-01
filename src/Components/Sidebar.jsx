@@ -32,7 +32,7 @@ const Sidebar = () => {
             <div className="flex flex-col gap-3">
               <div className="flex flex-col justify-center items-center">
                 <img
-                  className="h-[200px] w-[180px] mt-2 rounded-full"
+                  className="h-[190px] w-[190px] mt-2"
                   src="./prf2.png"
                   alt="Logo"
                 />

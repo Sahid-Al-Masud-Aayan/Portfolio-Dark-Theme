@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { MdMail } from "react-icons/md";
-import { FaFacebook, FaGithub, FaLinkedin, FaPhone } from "react-icons/fa6";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhone, FaUpwork } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { Bounce, Slide, ToastContainer, Zoom, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -85,34 +85,35 @@ const Contact = () => {
     <div className="w-[400px] md:w-[700px] h-auto lg:w-[1000px] bg-gradient-to-r from-[#202020] to-[#393939] rounded-3xl gap-2 p-5 mt-[60px] mb-[60px]">
     <div data-aos="fade-left"><h1 className='text-[48px] md:text-[60px] mt-2 font-headFont font-semibold text-center bg-gradient-to-r to-sky-300 from-teal-800 bg-clip-text text-transparent'>Contact Me</h1></div>
 <div data-aos="zoom-in-up">
-      <div className="flex justify-around md:gap-0 gap-5 items-center md:scale-100 scale-90 mt-5">
+<div className="flex flex-wrap justify-center md:justify-around gap-5 md:gap-0 items-center md:scale-100 scale-90 mt-5">
 
-      <div class=" hover:scale-95 duration-300 relative group text-sky-100  overflow-hidden w-96 h-44 rounded-md bg-sky-600 p-2 flex justify-center items-center font-extrabold shadow-xl">
+{/* Email Card */}
+<div className="hover:scale-95 duration-300 relative group text-sky-100 overflow-hidden w-[250px] h-44 rounded-md bg-slate-600 p-2 flex justify-center items-center font-extrabold cursor-pointer shadow-[0px_0px_20px_5px_#e2e8f0]">
+  <div className="absolute right-20 -top-4 group-hover:top-[10px] group-hover:right-2 z-10 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-sky-950"></div>
+  <div className="absolute -right-5 -top-4 group-hover:top-1 group-hover:right-2 z-10 w-32 h-32 rounded-full group-hover:scale-150 duration-500 bg-gray-800"></div>
+  <div className="absolute right-[20rem] top-[8rem] group-hover:top-1 group-hover:right-2 z-10 w-20 h-20 rounded-full group-hover:scale-150 duration-500 bg-slate-700"></div>
+  <div className="absolute right-[5em] -top-4 group-hover:top-1 group-hover:right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150 duration-500 bg-gray-600"></div>
+  <div className="flex flex-col justify-center items-center z-10">
+    <MdMail className="text-5xl text-[#5b5b5b]" />
+    <p className="text-2xl font-semibold font-slab mb-2 text-ellipsis">Email</p>
+    <a className="group-hover:underline font-merri text-[10px] md:text-[13px]" href="mailto:aayan.webdeveloper@gmail.com">aayan.webdeveloper@gmail.com</a>
+  </div>
+</div>
 
-     <div class="absolute right-20 -top-4  group-hover:top-[10px] group-hover:right-2 z-10 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-sky-950"></div>
-     <div class="absolute -right-5 -top-4  group-hover:top-1 group-hover:right-2 z-10 w-32 h-32 rounded-full group-hover:scale-150  duration-500 bg-teal-800"></div>
-     <div class="absolute right-[20rem] top-[8rem] group-hover:top-1 group-hover:right-2 z-10 w-20 h-20 rounded-full group-hover:scale-150  duration-500 bg-blue-700"></div>
-     <div class="absolute right-[5em] -top-4 group-hover:top-1 group-hover:right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150  duration-500 bg-sky-800"></div>
-     <div className="flex flex-col justify-center items-center z-10">
-     <MdMail className='text-5xl text-[#ffce3b]'/>
-     <p className='text-2xl font-semibold font-slab mb-2 text-ellipsis'>Email</p>
-     <a className='group-hover:underline font-merri text-[10px] md:text-[16px]' href="mailto:aayan.webdeveloper@gmail.com">aayan.webdeveloper@gmail.com</a>
-     </div>
-       </div>
+{/* Phone Card */}
+<div className="hover:scale-95 duration-300 relative group text-sky-100 overflow-hidden w-[250px] h-44 rounded-md bg-gray-700 p-2 flex justify-center items-center font-extrabold shadow-[0px_0px_20px_5px_#e2e8f0]">
+  <div className="absolute right-20 -top-4 group-hover:top-[10px] group-hover:right-2 z-10 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-[#1c1c1c]"></div>
+  <div className="absolute -right-5 -top-4 group-hover:top-1 group-hover:right-2 z-10 w-32 h-32 rounded-full group-hover:scale-150 duration-500 bg-[#4b4b4b]"></div>
+  <div className="absolute right-[20rem] top-[8rem] group-hover:top-1 group-hover:right-2 z-10 w-20 h-20 rounded-full group-hover:scale-150 duration-500 bg-[#044b92]"></div>
+  <div className="absolute right-[5em] -top-4 group-hover:top-1 group-hover:right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150 duration-500 bg-[#636363]"></div>
+  <div className="flex flex-col justify-center items-center z-10">
+    <FaPhone className="text-5xl text-[#868686]" />
+    <p className="text-2xl font-semibold font-slab mb-2 text-ellipsis">Phone</p>
+    <p className="group-hover:font-extrabold font-narrow text-xl tracking-[2px]">+8801888135477</p>
+  </div>
+</div>
+</div>
 
-      <div class=" hover:scale-95 duration-300 relative group text-sky-100  overflow-hidden w-96 h-44 rounded-md bg-teal-600 p-2 flex justify-center items-center font-extrabold shadow-xl">
-
-     <div class="absolute right-20 -top-4  group-hover:top-[10px] group-hover:right-2 z-10 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-[#0f6086]"></div>
-     <div class="absolute -right-5 -top-4  group-hover:top-1 group-hover:right-2 z-10 w-32 h-32 rounded-full group-hover:scale-150  duration-500 bg-[#08e2ff]"></div>
-     <div class="absolute right-[20rem] top-[8rem] group-hover:top-1 group-hover:right-2 z-10 w-20 h-20 rounded-full group-hover:scale-150  duration-500 bg-[#044b92]"></div>
-     <div class="absolute right-[5em] -top-4 group-hover:top-1 group-hover:right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150  duration-500 bg-[#0b9c81]"></div>
-     <div className="flex flex-col justify-center items-center z-10">
-         <FaPhone className='text-5xl text-[#3b86ff]'/>
-         <p className='text-2xl font-semibold font-slab mb-2 text-ellipsis'>Phone</p>
-         <p className='group-hover:font-extrabold font-narrow text-xl tracking-[2px]'>+8801888135477</p>
-     </div>
-       </div>
-      </div>
 </div>
 <div data-aos="fade-left">
 <div className='mt-20 rounded-xl flex justify-center items-center'>
@@ -130,29 +131,41 @@ const Contact = () => {
 <div className="">
   
 
-<div data-aos="fade-right"><h3 className='text-center mb-10 mt-20 text-[32px] md:text-[38px] font-subHed font-semibold text-[#00f7ff]'>Socials</h3></div>
+<div data-aos="fade-right"><h3 className='text-center mb-10 mt-20 text-[32px] md:text-[43px] font-montserrat font-bold text-[#0d6265]'>Socials</h3></div>
   
       <div data-aos="flip-up">
-         <div className="flex md:justify-around justify-center items-center gap-8 md:gap-4">
-         <Link target='blank' to='https://www.facebook.com/profile.php?id=61571378758720' class="w-[120px] h-[120px] md:h-[140px] md:w-[140px] bg-[#0866FF] rounded-lg overflow-hidden relative group z-0 flex justify-center items-center gap-2 flex-col active:scale-[0.8] transition-transform">
-        <div class="circle absolute h-[5em] w-[5em] -top-[30%] -right-[6.5em] rounded-full bg-[#fff] group-hover:scale-[800%] duration-500 z-[-1] op"></div>
-        <FaFacebook className='group-hover:text-[#0A66C2] text-6xl text-[#fff]'/>
-        <h1 class="z-20 font-medium text-center text-white group-hover:text-[#0866FF] duration-500 text-[15px] md:text-[1.4em]">Facebook</h1>
-         </Link>
-         
-         
-         <Link target='blank' to='https://www.linkedin.com/in/sahid-al-masud-aayan-348653301/' class="w-[120px] h-[120px] md:h-[140px] md:w-[140px] bg-[#0A66C2] rounded-lg overflow-hidden relative group z-0 flex justify-center items-center gap-2 flex-col active:scale-[0.8] transition-transform">
-        <div class="circle absolute h-[5em] w-[5em] top-[100%] -right-[2.5em] rounded-full bg-[#fff] group-hover:scale-[800%] duration-500 z-[-1] op"></div>
-        <FaLinkedin className='group-hover:text-[#0A66C2] text-6xl text-[#fff]'/>
-        <h1 class="z-20 font-medium text-center text-white group-hover:text-[#0A66C2] duration-500 text-[15px] md:text-[1.4em]">LinkedIn</h1>
-         </Link>
+      <div className="flex flex-wrap justify-center md:justify-around items-center gap-8 md:gap-4">
+  <Link target="blank" to="https://www.facebook.com/profile.php?id=61571378758720" className="w-[120px] h-[120px] md:h-[120px] md:w-[120px] bg-[#0866FF] rounded-full overflow-hidden relative group z-0 flex justify-center items-center gap-2 flex-col active:scale-[0.8] transition-transform">
+    <div className="circle absolute h-[5em] w-[5em] -top-[30%] -right-[6.5em] rounded-full bg-[#fff] group-hover:scale-[800%] duration-500 z-[-1] op"></div>
+    <FaFacebook className="group-hover:text-[#0A66C2] text-5xl text-[#fff]" />
+    <h1 className="z-20 font-medium text-center text-white font-slab group-hover:text-[#0866FF] duration-500 text-[15px] md:text-[16px]">Facebook</h1>
+  </Link>
 
-         <Link target='blank' to='https://github.com/Sahid-Al-Masud-Aayan' class="w-[120px] h-[120px] md:h-[140px] md:w-[140px] bg-[#1F2328] rounded-lg overflow-hidden relative group z-0 flex justify-center items-center gap-2 flex-col active:scale-[0.8] transition-transform">
-         <div class="circle absolute h-[5em] w-[5em] -top-[30%] -right-[6.5em] rounded-full bg-[#fff] group-hover:scale-[800%] duration-500 z-[-1] op"></div>
-        <FaGithub className='  group-hover:text-[#1F2328] text-6xl text-[#fff]'/>
-        <h1 class="z-20 font-medium text-center text-white group-hover:text-[#1F2328] duration-500 text-[15px] md:text-[1.4em]">GitHub</h1>
-         </Link>
-         </div>
+  <Link target="blank" to="https://www.instagram.com/aayanreactdeveloper/" className="w-[120px] h-[120px] md:h-[120px] md:w-[120px] bg-[#C13584] rounded-full overflow-hidden relative group z-0 flex justify-center items-center gap-2 flex-col active:scale-[0.8] transition-transform">
+    <div className="circle absolute h-[5em] w-[5em] -top-[30%] -right-[6.5em] rounded-full bg-[#fff] group-hover:scale-[800%] duration-500 z-[-1] op"></div>
+    <FaInstagram className="group-hover:text-[#C13584] text-5xl text-[#fff]" />
+    <h1 className="z-20 font-medium text-center text-white font-slab group-hover:text-[#C13584] duration-500 text-[15px] md:text-[16px]">Instagram</h1>
+  </Link>
+
+  <Link target="blank" to="https://www.upwork.com/freelancers/aayanreactdeveloper" className="w-[120px] h-[120px] md:h-[120px] md:w-[120px] bg-[#14A800] rounded-full overflow-hidden relative group z-0 flex justify-center items-center gap-2 flex-col active:scale-[0.8] transition-transform">
+    <div className="circle absolute h-[5em] w-[5em] -top-[30%] -right-[6.5em] rounded-full bg-[#fff] group-hover:scale-[800%] duration-500 z-[-1] op"></div>
+    <FaUpwork className="group-hover:text-[#14A800] text-5xl text-[#fff]" />
+    <h1 className="z-20 font-medium text-center text-white font-slab group-hover:text-[#14A800] duration-500 text-[15px] md:text-[16px]">Upwork</h1>
+  </Link>
+
+  <Link target="blank" to="https://www.linkedin.com/in/sahid-al-masud-aayan-348653301/" className="w-[120px] h-[120px] md:h-[120px] md:w-[120px] bg-[#0A66C2] rounded-full overflow-hidden relative group z-0 flex justify-center items-center gap-2 flex-col active:scale-[0.8] transition-transform">
+    <div className="circle absolute h-[5em] w-[5em] top-[100%] -right-[2.5em] rounded-full bg-[#fff] group-hover:scale-[800%] duration-500 z-[-1] op"></div>
+    <FaLinkedin className="group-hover:text-[#0A66C2] text-5xl text-[#fff]" />
+    <h1 className="z-20 font-medium text-center text-white font-slab group-hover:text-[#0A66C2] duration-500 text-[15px] md:text-[16px]">LinkedIn</h1>
+  </Link>
+
+  <Link target="blank" to="https://github.com/Sahid-Al-Masud-Aayan" className="w-[120px] h-[120px] md:h-[120px] md:w-[120px] bg-[#1F2328] rounded-full overflow-hidden relative group z-0 flex justify-center items-center gap-2 flex-col active:scale-[0.8] transition-transform">
+    <div className="circle absolute h-[5em] w-[5em] -top-[30%] -right-[6.5em] rounded-full bg-[#fff] group-hover:scale-[800%] duration-500 z-[-1] op"></div>
+    <FaGithub className="group-hover:text-[#1F2328] text-5xl text-[#fff]" />
+    <h1 className="z-20 font-medium text-center text-white font-slab group-hover:text-[#1F2328] duration-500 text-[15px] md:text-[16px]">GitHub</h1>
+  </Link>
+</div>
+
       </div>
 </div>
 

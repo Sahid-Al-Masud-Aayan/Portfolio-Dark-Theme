@@ -6,11 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+          'instagram-gradient': 'linear-gradient(45deg, #f5a623, #f44336, #9c27b0, #3f51b5, #2196f3, #5D31CA)',
+        },
       keyframes: {
         "moving-shadow": {
           "0%, 100%": { boxShadow: "0 0 10px #3b82f6, 0 0 20px #2563eb, 0 0 40px #1e40af" },
           "50%": { boxShadow: "0 0 20px #2563eb, 0 0 30px #1e40af, 0 0 50px #1d4ed8" },
         },
+        
       },
       animation: {
         "moving-shadow": "moving-shadow 2s infinite",
